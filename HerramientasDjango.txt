@@ -1,0 +1,30 @@
+Herramientas (y más) para Django:
+
+- Entornos Virtuales
+- Estructura general de un proyecto
+- Etiquetas Django en HTML
+- Uso de Bootstrap
+- Templates (*URLS DINÁMICAS)
+- Tests
+- Autorización/Autenticación
+- Registros (Base de Datos)
+- Consultas dentro del Framework: SQL y ORM
+- Página de admins:
+	Desde la creación del superusuario hasta la modificación de los datos ingresados.
+
+- base.HTML
+- static (css, img, js)
+- postgre (psycopg2)
+- formularios
+- login/logout
+- ingresar data a través de un archivo
+- serializer.py (api)
+- páginas de error (redireccionamiento)
+- ingreso a páginas limitado por permisos
+- 
+
+- Buenas prácticas
+
+Catherine Alderete: Preguntarle respecto a la evaluación, la supervisión y límites de esta.
+
+*Seguir rellenando

@@ -1,0 +1,36 @@
+<!-- Estructura base estandard para un proyecto Django -->
+ <!-- Cargar STATICS para css, img y js -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi Proyecto Django{% endblock %}</title>
+    <!-- href para los static -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Agregar BOOTSTRAP en el base.html, así todos los templates que deriven de esta plantilla puedan acceder a esta herramienta. -->
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+
+<body>
+    
+    {% block navbar %}
+        <!-- incluir NAVBAR desde includes/navbar.html -->
+        {% include 'includes/navbar.html' %}
+    {% endblock %}
+    
+
+    {% block content %}
+        <!-- incluir contenido de cada template que herede de base.html -->
+    {% endblock %}
+    
+
+    {% block footer %}
+        <!-- incluir FOOTER desde includes/footer.html -->
+        {% include 'includes/footer.html' %}
+    {% endblock %}
+</html>

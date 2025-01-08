@@ -1,0 +1,6 @@
+02-01-2025
+
+Creación del proyecto
+Creación del entorno virtual 'venv'
+Creación del superusuario 'admin' (admin1234)
+

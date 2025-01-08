@@ -1,0 +1,23 @@
+<!-- templates/app1/crear_banda.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Banda</title>
+</head>
+<body>
+    <h1>Crear Banda</h1>
+    <form method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Información de la Banda</legend>
+            {{ banda_form.as_p }}
+        </fieldset>
+        <fieldset>
+            <legend>Perfil de la Banda</legend>
+            {{ perfil_form.as_p }}
+        </fieldset>
+        <button type="submit">Crear Banda</button>
+    </form>
+</body>
+</html>
