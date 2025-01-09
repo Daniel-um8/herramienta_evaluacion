@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 # Imports para formulario combinado (anidado)
 from .forms import BandaForm, PerfilBandaForm
+from .models import Banda
 
 def index(request):
     return render(request, 'app1/index.html')  # Renderizar la vista index.html con la información necesaria.
@@ -26,3 +27,9 @@ def crear_banda_con_perfil(request):
         perfil_form = PerfilBandaForm()
 
     return render(request, 'app1/crear_banda.html', {'banda_form': banda_form,'perfil_form': perfil_form,})
+
+# LISTAR BANDAS
+def listar_bandas(request):
+    bandas = Banda.objects.all()
+    return render(request, 'app1/listar_bandas.html', {'bandas': bandas})
+

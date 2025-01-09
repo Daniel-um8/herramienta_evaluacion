@@ -11,16 +11,8 @@ class BandaForm(forms.ModelForm):
         model = Banda
         fields = ['nombre']
 
-# Crearemos un formulario comnbinado para crear una banda y su perfil al mismo tiempo.
-# class BandaPerfilForm(forms.ModelForm):
-#     class Meta:
-#         model = Banda
-#         fields = ['nombre']
-
-#     descripcion = forms.CharField(max_length=200)
-#     anio_formacion = forms.IntegerField()
-#     genero = forms.CharField(max_length=100)
-
+# Se crea una clase que combina los dos formularios creados anteriormente
 class BandaYPerfilForm(forms.Form):
     banda = BandaForm()
     perfil_banda = PerfilBandaForm()
+

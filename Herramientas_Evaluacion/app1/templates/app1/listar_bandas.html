@@ -1,0 +1,35 @@
+<!-- Ahora generemos el archivo html para listar las bandas existentes en mi base de datos -->
+
+<!-- templates/app1/listar_bandas.html -->
+
+{% extends 'base.html' %}
+{% block title %}Listar Bandas{% endblock %}
+
+{% block content %}
+<h1>Listar Bandas</h1>
+<table border="1" cellspacing="0" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Año de Formación</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for banda in bandas %}
+            <tr>
+                <td>{{ banda.nombre }}</td>
+                <td>{{ banda.perfil.genero }}</td>
+                <td>{{ banda.perfil.anio_formacion }}</td>
+                <td>{{ banda.perfil.descripcion }}</td>
+                <td>
+                    <a href="">Editar</a>
+                    <a href="">Eliminar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

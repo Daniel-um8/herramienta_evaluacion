@@ -1,10 +1,9 @@
 <!-- templates/app1/crear_banda.html -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Crear Banda</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Crear Banda{% endblock %}
+
+{% block content %}
 <body>
     <h1>Crear Banda</h1>
     <form method="post">
@@ -20,4 +19,4 @@
         <button type="submit">Crear Banda</button>
     </form>
 </body>
-</html>
+{% endblock %}

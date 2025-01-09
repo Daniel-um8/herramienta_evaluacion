@@ -1,0 +1,9 @@
+07-01-2025
+
+Estructura para base.html
+Estructura para archivos estáticos (css, img y js)
+Modelos relacionados
+Formulario (*anidado)
+Archivo .git ignore para subir proyecto
+Creación de 'requirements.py'
+Templates sencillos para la app1
